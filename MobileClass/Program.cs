@@ -8,7 +8,11 @@
             cls.MakeCall("9544252302");
             cls.ChargeBattery(80);
             cls.UseBattery(20);
-            cls.PrintDetails();
+            //cls.PrintDetails();
+
+            Android andr = new Android("Samsung", "A52", "Oreo");
+            andr.PrintDetails();
+
         }
     }
 }

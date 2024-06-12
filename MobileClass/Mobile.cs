@@ -20,7 +20,7 @@ namespace MobileClass
         }
         public void MakeCall(string phoneNumber)
         {
-            Console.WriteLine(phoneNumber);
+            Console.WriteLine("Phone number: " +phoneNumber);
         }
 
         public void ChargeBattery(int amount)
@@ -28,21 +28,21 @@ namespace MobileClass
             batterylevel = batterylevel + amount;
             if (batterylevel < 100)
             {
-                Console.WriteLine(batterylevel);
+                Console.WriteLine("Initial Battery Level: " +batterylevel);
             }
         }
 
         public void UseBattery(int amount)
         {
             batterylevel = batterylevel - amount;
-            Console.WriteLine(batterylevel);
+            Console.WriteLine("Battery After Usage: " +batterylevel);
         }
 
-        public void PrintDetails()
+        public virtual void PrintDetails()      //add 'virtual' if we're inheriting
         {
-            Console.WriteLine(brand);
-            Console.WriteLine(model);
-            Console.WriteLine(batterylevel);
+            Console.WriteLine("Brand :" +brand);
+            Console.WriteLine("Model: " +model);
+            //Console.WriteLine(batterylevel);
         }
     }
 }
