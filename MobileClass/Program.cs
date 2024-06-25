@@ -10,8 +10,10 @@
             cls.UseBattery(20);
             //cls.PrintDetails();
 
-            Android andr = new Android("Samsung", "A52", "Oreo");
+            Android andr = new Android("Samsung", "A52", "Android 12");
             andr.PrintDetails();
+            andr.TakePhoto();
+            andr.GetLocation();
 
         }
     }
